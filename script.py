@@ -13,16 +13,11 @@ def generate_imgs(img,n):
     # Add Text to an image
     I1.text((180, 900), n, font=myFont, fill=(0, 0, 0))
     
-    # Display edited image
-    #img.show()
-    
     # Save the edited image
-    ruta = n + ".png"
+    ruta = "Boletas/" +n + ".png"
     img.save(ruta)
 
-
-
-for i in range(1,101):
+for i in range(0,100):
 
     # Open an Image
     img = Image.open('img.jpg')
